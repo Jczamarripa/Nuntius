@@ -1,0 +1,469 @@
+*{
+  font-family: arial;
+  margin: 0;
+  border: 0;
+}
+html{
+  border: 0;
+  margin: 0;
+}
+body{
+  background-color: rgb(159, 233, 220);
+}
+
+#navbar{
+  width: 100%;
+  position: relative;
+  float: left;
+  border-bottom: 1px solid black;
+  background: rgb(224, 42, 69);
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+}
+#logo-nav{
+  width: 20%;
+  position: relative;
+  float: left;
+}
+#logo-nav > img{
+  height: 80px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#menu-nav{
+  width: 70%;
+  position: relative;
+  float: left;
+  height: 90px;
+}
+.menu-option{
+  width: 33.33%;
+  position: relative;
+  float: left;
+  text-align: center;
+  height: 55px;
+  padding-top: 35px;
+  cursor: pointer;
+}
+.menu-option:hover{
+  background: rgb(99, 142, 177);
+}
+#session-nav{
+  width: 10%;
+  position: relative;
+  float: left;
+  padding-top: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+#container{
+  width: 90%;
+  position: relative;
+  float: left;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+.loader{
+  width: 100%;
+  position: relative;
+  float: left;
+}
+.loader > img{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  margin-right: -50%;
+}
+#container-1, #container-2, #container-3{
+  width: 33.33%;
+  position: relative;
+  float: left;
+
+}
+#container-1{
+}
+#container-2{
+}
+.promotion{
+  width: 90%;
+  position: relative;
+  float: left;
+  margin-left: 5%;
+  background: rgb(64, 187, 65);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.logo-promotion{
+  width: 30%;
+  position: relative;
+  float: left;
+}
+.logo-promotion > img{
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+.title-promotion{
+  width: 70%;
+  position: relative;
+  float: left;
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+  margin-top: 10px;
+}
+.description-promotion{
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+  float: left;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(232, 133, 41);
+}
+.franchise-logo{
+  width: 10%;
+  position: relative;
+  float:left;
+}
+.franchise-logo > img{
+  height: 20px;
+  margin-left: 10px;
+}
+
+.franchise-name{
+  width: 80%;
+  position: relative;
+  float: left;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  height: 100%;
+}
+.hour-logo{
+  width: 10%;
+  position: relative;
+  float: left;
+}
+.hour-logo > img{
+  height: 20px;
+  margin-left: 10px
+}
+.beginHour-promotion-text{
+  width: 25%;
+  position: relative;
+  float: left;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 24px;
+}
+.endHour-promotion-text{
+  width: 25%;
+  position: relative;
+  float: left;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 24px;
+}
+.beginHour-promotion-hour,.endHour-promotion-hour{
+  width: 20%;
+  position: relative;
+  float: left;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 24px;
+}
+.time-logo{
+  width: 10%;
+  position: relative;
+  float: left;
+}
+.time-logo > img{
+  height: 20px;
+  margin-left: 10px;
+}
+.start-date-text,.start-date-date,.end-date-text,.end-date-date{
+  width: 22.5%;
+  position: relative;
+  float:left;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 24px;
+}
+.start-date-text,.start-date-date,.end-date-text,.end-date-date{
+  font-size: 12pt;
+}
+.beginHour-promotion-hour, .beginHour-promotion-text, .endHour-promotion-hour, .endHour-promotion-text{
+  font-size: 12pt;
+}
+#hamburguer{
+  display: none;
+}
+#sidemenu{
+  display: none;
+}
+#distance{
+  width: 33.33%;
+  position: relative;
+  float:left;
+  height: 10px;
+  margin-bottom: 50px;
+}
+#txtDistance{
+  width: 33.3%;
+  color: rgb(184, 101, 43);
+  text-align: center;
+  position: relative;
+  float: left;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-bottom: 50px;
+}
+#nmbDistance{
+  width: 33.3%;
+  color: rgb(184, 101, 43);
+  text-align: center;
+  position: relative;
+  float: left;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-bottom: 50px;
+}
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 50px;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: 0px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+#signUp{
+  width: 50%;
+  position: relative;
+  float: left;
+  margin-left: 35%;
+}
+
+#signUp > label{
+  width: 30%;
+  position: relative;
+  float: left;
+  height: 50px;
+}
+#signUp > input{
+  width: 40%;
+  position: relative;
+  float: left;
+  height: 30px;
+  margin-bottom: 20px;
+}
+#signUp > button{
+  width: 30%;
+  position: relative;
+  float: left;
+  height: 30px;
+  border: 1px solid rgb(224, 42, 69);
+  margin-left: 40%;
+}
+@media only screen and (max-width: 769px) {
+  #container-3, #container-2, #container-1{
+    width: 70%;
+    margin-left: 15%;
+  }
+  .title-promotion{
+    font-size: 18px;
+  }
+  .loader > img{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin-right: -50%;
+  }
+  .start-date-text,.start-date-date,.end-date-text,.end-date-date{
+    font-size: 9pt;
+  }
+  .beginHour-promotion-hour, .beginHour-promotion-text, .endHour-promotion-hour, .endHour-promotion-text{
+    font-size: 9pt;
+  }
+  #menu-nav{
+    display: none;
+  }
+
+  #session-nav{
+    display: none;
+  }
+
+  #logo-nav{
+    width: 90%;
+  }
+  #logo-nav > img{
+    margin-left: 300px;
+  }
+  #hamburguer{
+    width: 10%;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    display: inline;
+  }
+  #hamburguer > img{
+    height: 40px;
+  }
+  #sidemenu{
+    width: 50%;
+    margin-left: 50%;
+    position: absolute;
+    height: 100%;
+    margin-top: 90px;
+    background: rgb(224, 42, 69);
+  }
+  .sidemenu-option{
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  #signUp{
+    width: 80%;
+    position: relative;
+    float: left;
+    margin-left: 5%;
+  }
+
+  #signUp > label{
+    width: 30%;
+    position: relative;
+    float: left;
+    height: 50px;
+  }
+  #signUp > input{
+    width: 40%;
+    position: relative;
+    float: left;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  #signUp > button{
+    width: 30%;
+    position: relative;
+    float: left;
+    height: 30px;
+    border: 1px solid rgb(224, 42, 69);
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  #logo-nav > img{
+    height: 50px;
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+  #sidemenu{
+    width: 50%;
+    margin-left: 50%;
+    position: absolute;
+    height: 100%;
+    margin-top: 66px;
+    background: rgb(224, 42, 69);
+
+  }
+  .sidemenu-option{
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+  #container-3, #container-2, #container-1{
+    width: 100%;
+    margin-left: 4px
+  }
+  .franchise-name{
+    margin-left: 15px;
+  }
+
+  .loader > img{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    margin-right: -50%;
+  }
+  .start-date-text,.start-date-date,.end-date-text,.end-date-date{
+    font-size: 7pt;
+  }
+  .beginHour-promotion-hour, .beginHour-promotion-text, .endHour-promotion-hour, .endHour-promotion-text{
+    font-size: 7pt;
+  }
+  #menu-nav{
+    display: none;
+  }
+
+  #session-nav{
+    display: none;
+  }
+  #logo-nav{
+    width: 85%;
+  }
+  #logo-nav > img{
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  #hamburguer{
+    width: 10%;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    margin-top:20px;
+    display: inline;
+  }
+  #hamburguer > img{
+    height: 32px;
+  }
+  #sidemenu{
+    width: 50%;
+    margin-left: 50%;
+    position: absolute;
+    height: 100%;
+    margin-top: 65px;
+    background: rgb(224, 42, 69);
+    z-index: 8000;
+  }
+}
